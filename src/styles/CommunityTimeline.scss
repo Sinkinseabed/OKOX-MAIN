@@ -1,0 +1,117 @@
+.community-timeline-section {
+  background-color: #fdc239;
+  display: inline-block;
+  width: 100%;
+
+  .community-border {
+    height: 36px;
+    border-top: 4px solid #ff6d45;
+    border-bottom: 4px solid #ff6d45;
+    background: #FAEAB8;
+    margin-top: 10px;
+  }
+
+
+  .community-timeline-content {
+    overflow: hidden;
+    background-image: url('/images/timeline_bg_1.png');
+    background-size: cover;
+    background-position: left bottom;
+
+    .community-header {
+      display: flex;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-top: 70px;
+      gap: 100px;
+
+      .section-title {
+        font-size: 48px;
+        margin-top: 0;
+      }
+
+      p {
+        font-family: Acme;
+        font-size: 24px;
+        padding: 5px;
+        line-height: 40px;
+      }
+    }
+  }
+
+  .community-timeline-content-right {
+    width: 68%;
+    overflow: hidden;
+    padding: 65px 0 100px;
+    margin-left: 32%;
+
+    .mascot-section {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      min-height: 700px;
+    }
+
+    .mascot-card {
+      border-radius: 12px;
+      padding: 16px;
+      min-width: 390px;
+      text-align: center;
+      position: relative;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-6px);
+      }
+
+      .tweet-box {
+        background: #FBCB0C;
+        border: 3px solid #000;
+        border-radius: 22px;
+        justify-content: center;
+        align-items: center;
+        height: 354px;
+        width: 100%;
+        margin-bottom: 40px;
+        padding: 8px;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+
+        .tweet-img {
+          border-radius: 15px;
+          box-shadow: 0 4px 5px 5px #000c;
+          height: -webkit-fill-available;
+          max-width: 100%;
+          max-height: fit-content;
+        }
+      }
+
+      .text-box {
+        background: #FFEFAD;
+        font-size: 24px;
+        font-family: Acme;
+        padding: 8px;
+        border-radius: 15px;
+        word-break: break-all;
+
+        .link {
+          color: #000;
+          width: 100%;
+          display: block;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+  .slider-buttons {
+    display: flex;
+    gap: 160px;
+    justify-content: end;
+    margin-right: 55px;
+  }
+}
