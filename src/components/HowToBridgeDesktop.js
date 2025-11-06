@@ -6,37 +6,37 @@ function HowToBridgeDesktop() {
     const steps = [
         {
             id: 1,
-            img: "/images/step_1.PNG", // replace with your actual image path
+            img: "/images/step_1.png",
             text: "Step 1: Open OKX wallet on your desktop & click connect wallet.",
         },
         {
             id: 2,
-            img: "/images/step_2.PNG",
+            img: "/images/step_2.png",
             text: "Step 2: Connect your wallet using QR or browser extension",
         },
         {
             id: 3,
-            img: "/images/step_3.PNG",
+            img: "/images/step_3.png",
             text: "Step 3: On your dashboard click swap from the top menu",
         },
         {
             id: 4,
-            img: "/images/step_4.PNG",
+            img: "/images/step_4.png",
             text: "Step 4: On the swap screen click “From”",
         },
         {
             id: 5,
-            img: "/images/step_5.PNG",
+            img: "/images/step_5.png",
             text: "Step 5: From the list select the chain & the token you want to swap from",
         },
         {
             id: 6,
-            img: "/images/step_6.PNG",
+            img: "/images/step_6.png",
             text: "Step 6: Click the “to” and paste copy paste the $OKOX contract address and select the token",
         },
         {
             id: 7,
-            img: "/images/step_7.PNG",
+            img: "/images/step_7.png",
             text: "Step 7: Once both selected, enter the amount, click swap and voila!!. It’s done",
         },
     ];
