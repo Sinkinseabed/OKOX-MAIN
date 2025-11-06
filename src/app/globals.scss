@@ -620,7 +620,7 @@ label.contract-box-label {
   .slider-container .slider-container-inner {
     .slider-content .slider-image-box {
       border-radius: 14px;
-      min-height: 650px;
+      min-height: 700px;
       padding: 15px 0 20px;
     }
 
@@ -664,7 +664,7 @@ label.contract-box-label {
     }
 
     .slider-image-box {
-      min-height: auto;
+      min-height: 440px;
       padding: 15px;
 
       img {
@@ -1366,6 +1366,9 @@ label.contract-box-label {
 
 
   .how-to-bridge-section {
+    .bridge-header:before {
+        width: 90%;
+    }
     .slider-container .slider-container-inner {
 
       .character-right,
@@ -1392,6 +1395,7 @@ label.contract-box-label {
     .slide-text {
       padding: 10px;
       font-size: 15px;
+      border: 2px solid;
     }
   }
 
@@ -1413,13 +1417,16 @@ label.contract-box-label {
   .community-timeline-section .community-timeline-content {
     padding-bottom: 330px;
 
-    .community-header .section-title {
+    .community-header {
+      margin-top: 35px;
+      .section-title {
       font-size: 23px;
 
       span {
         font-size: 23px;
       }
     }
+  }
 
     .mascot-section {
       gap: 10px;
@@ -1428,6 +1435,9 @@ label.contract-box-label {
         font-size: 15px;
       }
     }
+  }
+  #bridge-desktop .slider-container .slider-image-box {
+    min-height: 240px;
   }
 
   .footer-section {
