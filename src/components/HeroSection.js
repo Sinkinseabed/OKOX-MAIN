@@ -54,8 +54,8 @@ export default function HeroSection() {
 
             <div className="hero-buttons desktop">
               <a className="buy-btn" target="_blank" href="https://web3.okx.com/">BUY $OKOX</a>
-              <a className="social-icon-btn " target="_blank" href="https://t.me/OKOXXLayer"><Image src={social_2} alt="Social Icon 2" width={50} height={50} /></a>
-              <a className="social-icon-btn social-icon-btn2" target="_blank" href="https://x.com/OKXOKOX"><Image src={social_1} alt="Social Icon 1" width={50} height={50} /></a>
+              <a className="social-icon-btn " target="_blank" href="https://x.com/OKXOKOX"><Image src={social_2} alt="Social Icon 2" width={50} height={50} /></a>
+              <a className="social-icon-btn social-icon-btn2" target="_blank" href="https://t.me/OKOXXLayer" ><Image src={social_1} alt="Social Icon 1" width={50} height={50} /></a>
             </div>
 
             <div className="token-stats">

@@ -32,8 +32,8 @@ const Footer = () => {
                     <div className="footer-right-inner">
                         <h2 className="footer-title">JOIN US TODAY</h2>
                         <div className="social-icons">
-                            <a className="social-icon-btn " target="_blank" href="https://t.me/OKOXXLayer"><Image src={social_2} alt="Social Icon 2" width={50} height={50} /></a>
-                            <a className="social-icon-btn social-icon-btn2" target="_blank" href="https://x.com/OKXOKOX"><Image src={social_1} alt="Social Icon 1" width={50} height={50} /></a>
+                            <a className="social-icon-btn " target="_blank" href="https://x.com/OKXOKOX"><Image src={social_2} alt="Social Icon 2" width={50} height={50} /></a>
+                            <a className="social-icon-btn social-icon-btn2"  target="_blank" href="https://t.me/OKOXXLayer" ><Image src={social_1} alt="Social Icon 1" width={50} height={50} /></a>
                         </div>
 
                         <div className="contract-box desktop">
