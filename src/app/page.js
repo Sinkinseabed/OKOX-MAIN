@@ -9,6 +9,7 @@ import Tokenomics from "@/components/Tokenomics";
 import HowToBridge from "@/components/HowToBridge";
 import HowToBridgeDesktop from "@/components/HowToBridgeDesktop";
 import CommunityTimeline from "@/components/CommunityTimeline";
+import CommunityTimelineNew from "@/components/CommunityTimelineNew";
 import "../styles/HowToBridge.scss";
 import "../styles/CommunityTimeline.scss";
 import "./globals.scss";
@@ -24,7 +25,8 @@ export default function HomePage() {
         <HowToBridge /> 
         <HowToBridgeDesktop />
       </div>
-      <CommunityTimeline />
+      {/* <CommunityTimeline /> */}
+      <CommunityTimelineNew />
       
       <Footer />
     </>

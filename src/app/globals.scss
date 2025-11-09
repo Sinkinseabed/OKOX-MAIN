@@ -415,6 +415,26 @@ label.contract-box-label {
   }
 }
 
+.community-timeline-section-new {
+  .community-timeline-content {
+    padding-bottom: 160px;
+    background-size: contain;
+
+    .community-timeline-content-right {
+      width: 100%;
+      margin-left: 0;
+      animation: scrollReverse 20s linear infinite;
+      overflow: unset;
+      .mascot-section {
+        flex-wrap: nowrap;
+.slider-step {
+        width: 100%;
+      }
+      }
+    }
+  }
+}
+
 @media (max-width: 1650px) {
   .section-title {
     font-size: 62px;
@@ -986,6 +1006,11 @@ label.contract-box-label {
     }
 
   }
+  .community-timeline-section-new {
+  .community-timeline-content {
+    padding-bottom: 400px;
+  }
+}
 }
 
 @media (max-width: 768px) {
@@ -1183,6 +1208,17 @@ label.contract-box-label {
   .footer-container .footer-left {
     width: 400px;
   }
+    .community-timeline-section-new {
+  .community-timeline-content {
+    .community-timeline-content-right {
+      animation: unset;
+.mascot-section {
+      flex-wrap: wrap !important;
+    }
+    }
+    
+  }
+}
 }
 
 @media (max-width: 560px) {
@@ -1367,8 +1403,9 @@ label.contract-box-label {
 
   .how-to-bridge-section {
     .bridge-header:before {
-        width: 90%;
+      width: 90%;
     }
+
     .slider-container .slider-container-inner {
 
       .character-right,
@@ -1419,14 +1456,15 @@ label.contract-box-label {
 
     .community-header {
       margin-top: 35px;
-      .section-title {
-      font-size: 23px;
 
-      span {
+      .section-title {
         font-size: 23px;
+
+        span {
+          font-size: 23px;
+        }
       }
     }
-  }
 
     .mascot-section {
       gap: 10px;
@@ -1436,6 +1474,7 @@ label.contract-box-label {
       }
     }
   }
+
   #bridge-desktop .slider-container .slider-image-box {
     min-height: 240px;
   }
