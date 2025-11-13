@@ -75,8 +75,8 @@ const CommunityTimelineNew = () => {
             <div className='community-timeline-content'>
                 <div className='community-header'>
                     <h1 className="section-title">COMMUNITY TIMELINE<br /><span>From April Fools to All-Time Highs</span></h1>
-                    <p>$OKOX started as a joke.<br /> Now it's building a story — powered by community, memes, and milestones.<br />
-                        Every step adds to the legend. Every holder becomes part of history.</p>
+                    {/* <p>$OKOX started as a joke.<br /> Now it's building a story — powered by community, memes, and milestones.<br />
+                        Every step adds to the legend. Every holder becomes part of history.</p> */}
                 </div>
                 <div className='community-timeline-content-right'>
                     <section className="mascot-section">
@@ -129,10 +129,15 @@ const CommunityTimelineNew = () => {
                         ))
                         }
                     </section>
+
                     {/* <div className="slider-buttons desktop">
                         <button onClick={prevSlide} className="buy-btn btn-prev" > ← PREV</button>
                         <button onClick={nextSlide} className="buy-btn btn-next">NEXT →</button>
                     </div> */}
+                </div>
+                <div className='timeline-info-wrapper'>
+                    <p className='timeline-info'>$OKOX started as a joke.<br /> Now it's building a story — powered by community, memes, and milestones.<br />
+                        Every step adds to the legend. Every holder becomes part of history.</p>
                 </div>
             </div>
         </div>

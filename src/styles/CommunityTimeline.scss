@@ -17,6 +17,8 @@
     background-image: url('/images/timeline_bg_1.png');
     background-size: cover;
     background-position: left bottom;
+    background-repeat: no-repeat;
+    position: relative;
 
     .community-header {
       display: flex;
