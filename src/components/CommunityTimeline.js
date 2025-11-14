@@ -81,8 +81,8 @@ const CommunityTimeline = () => {
                 <div className='community-timeline-content-right'>
                     <section className="mascot-section">
 
-                        {mascotData.map(({ id, img, alt, text, link }) => (
-                            <div className='mobile slider-step'>
+                        {mascotData?.map(({ id, img, alt, text, link }) => (
+                            <div className='mobile slider-step' key={id}>
                                 <div className="mascot-card" key={id}>
                                     <div className="tweet-box">
                                         <img src={img} alt={alt} className="tweet-img" />

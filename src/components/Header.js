@@ -5,6 +5,7 @@ import "../styles/Header.scss";
 import Image from "next/image";
 import social_1 from "@/../public/images/social_1.png";
 import social_2 from "@/../public/images/social_2.png";
+import LanguageSelector from './LanguageSelector';
 
 export default function Header() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -52,6 +53,7 @@ export default function Header() {
           </a>
         </div>
       </div>
+      <LanguageSelector />
     </header>
   );
 }
