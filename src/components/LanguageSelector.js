@@ -6,16 +6,20 @@ import styles from './LanguageSelector.module.scss';
 import Image from 'next/image';
 import flag_en from "@/../public/images/flag_en.png";
 import flag_ch from "@/../public/images/flag_ch.png";
+import { useTranslation } from "react-i18next";
+import i18n from '@/i18n/i18n';
+// import i18n from "@/src/i18n/i18n"; // correct import
 
 const languages = [
   { code: 'en', name: 'English', flag: flag_en },
-  { code: 'ch', name: 'Chinese', flag: flag_ch },
+  { code: 'zh', name: 'Chinese', flag: flag_ch },
 ];
 
 export default function LanguageSelector() {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState(languages[0]);
   const dropdownRef = useRef(null);
+  const { t } = useTranslation();
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -36,6 +40,8 @@ export default function LanguageSelector() {
   };
 
   const handleLanguageSelect = (language) => {
+    i18n.changeLanguage(language.code);
+
     setSelectedLanguage(language);
     setIsOpen(false);
     // Here you would typically update the application's language
