@@ -1,14 +1,18 @@
+"use client";
+
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import AnimatedReveal from './AnimatedReveal'
 
 const WhatIsOkox = () => {
+  const { t } = useTranslation();
   return (
     <div className='section-two'>
       <AnimatedReveal direction="up">
         <h1 className="section-title">
-          WHAT IS $OKOX?
+          {t('whatIsOkox.title')}
           <br />
-          <span>From Meme to Movement</span>
+          <span>{t('whatIsOkox.subtitle')}</span>
         </h1>
       </AnimatedReveal>
 
@@ -16,18 +20,16 @@ const WhatIsOkox = () => {
       <AnimatedReveal direction="left">
 
       <div className='section-two-content' delay={0.5}>
+        <p>{t('whatIsOkox.description')}</p>
         <ul>
-          <li>On April 1, 2023, the official OKX account introduced a mascot during april fools.</li>
-          <li> It was supposed to be a one-day laugh.</li>
-          <li> But the internet had other plans.</li>
-          <li>The community fell in love.</li>
-          <li> Memes were born. Mentions kept coming.</li>
-          <li> And now, that same mascot lives onchain as a token powered by its community.</li>
+          {t('whatIsOkox.points', { returnObjects: true }).map((point, index) => (
+            <li key={index}>{point}</li>
+          ))}
         </ul>
       </div>
       </AnimatedReveal>
 
-      <div className='section-two-bottom-content desktop'>$OKOX isn’t just a coin. It’s a reminder that crypto culture builds itself — one meme at a time.</div>
+      <div className='section-two-bottom-content desktop'>{t('whatIsOkox.bottomLine')}</div>
     </div>
   )
 }

@@ -1,38 +1,41 @@
 "use client"
 import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next';
 import { motion } from "framer-motion";
 
 function HowToBridge() {
+    const { t } = useTranslation();
+    
     const steps = [
         {
             id: 1,
-            img: "/images/slider_1.png", // replace with your actual image path
-            text: "Step 1: Open OKX wallet app on your mobile & click dex",
+            img: "/images/slider_1.png",
+            text: t('bridge.steps.step1')
         },
         {
             id: 2,
             img: "/images/slider_2.png",
-            text: "Step 2: From the swap menu click the “from”",
+            text: t('bridge.steps.step2')
         },
         {
             id: 3,
             img: "/images/slider_3.jpg",
-            text: "Step 3: From the drop down select the token you want to swap from",
+            text: t('bridge.steps.step3')
         },
         {
             id: 4,
             img: "/images/slider_4.png",
-            text: "Step 4: Now select the “to”",
+            text: t('bridge.steps.step4')
         },
         {
             id: 5,
             img: "/images/slider_5.png",
-            text: "Step 5: In the drop down, copy and paste the $OKOX contract address and select the token",
+            text: t('bridge.steps.step5')
         },
         {
             id: 6,
             img: "/images/slider_6.jpg",
-            text: "Step 6: enter the amount, click swap & voila!! It’s done.",
+            text: t('bridge.steps.step6')
         },
     ];
 
@@ -52,8 +55,8 @@ function HowToBridge() {
     return (
         <div className='how-to-bridge-block how-to-bridge-section-mobile' id='bridge'>
             <div className='bridge-header'>
-                <h1 className='section-title'>HOW TO BRIDGE ON MOBILE<br /><span>FEW Taps to Mascot Magic</span></h1>
-                <div className='download-wallet'><img src='/images/wallet.png' />Download The OKX Wallet</div>
+                <h1 className='section-title'>{t('bridge.title')}<br /><span>{t('bridge.description')}</span></h1>
+                <div className='download-wallet'><img src='/images/wallet.png' />{t('bridge.downloadWallet')}</div>
                 <div className='download-stores' >
                     <a className='' href='https://apps.apple.com/us/app/okx-buy-bitcoin-btc-crypto/id1327268470' target="_blank">
                         <img src="/images/store_1.png" alt="App Store" className="store-icon" />
@@ -88,14 +91,14 @@ function HowToBridge() {
                                 onClick={prevSlide}
                                 className="btn-prev"
                             >
-                                ← Prev
+                                {t('bridge.prevButton')}
                             </button>
 
                             <button
                                 onClick={nextSlide}
                                 className="btn-next"
                             >
-                                Next →
+                                {t('bridge.nextButton')}
                             </button>
                         </div>
                     </div>

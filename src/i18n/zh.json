@@ -1,4 +1,79 @@
 {
-  "welcome": "欢迎",
-  "desc": "这是我的网站。"
+  "header": {
+    "home": "首页",
+    "tokenomics": "代币经济",
+    "bridge": "跨链桥",
+    "timeline": "时间线",
+    "buyButton": "购买 $OKOX"
+  },
+  "hero": {
+    "title": "$OKOX — OKX 吉祥物",
+    "subtitle": "由 OKX 顶级交易员支持",
+    "cta1": "在 OKX 购买",
+    "cta2": "阅读白皮书",
+    "burned": "已销毁",
+    "lockedForCommunity": "锁定给社区钱包",
+    "lockedInLiquidity": "锁定在流动性中",
+    "copy": "复制合约地址",
+    "add": "将 $OKOX 添加到你的 OKX 钱包",
+    "bridge": "跨链、兑换，并欢迎加入 OKOX 家族"
+  },
+  "contractAddress": "合约地址",
+  "whatIsOkox": {
+    "title": "什么是 $OKOX？",
+    "subtitle": "从模因到运动",
+    "description": "",
+    "points": [
+      "2023年4月1日，OKX官方账号在愚人节期间推出了一个吉祥物。",
+      "这原本应该只是一个笑话。",
+      "但互联网有其他计划。",
+      "社区爱上了它。",
+      "模因诞生了。提及不断。",
+      "现在，这个吉祥物以代币的形式在链上存在，由社区驱动。"
+    ],
+    "bottomLine": "$OKOX 不仅仅是一个代币。它提醒我们，加密文化是通过一个又一个模因建立起来的。",
+    "feature1": "社区驱动",
+    "feature2": "安全且可扩展",
+    "feature3": "通缩模型"
+  },
+  "tokenomics": {
+    "title": "代币经济",
+    "subtitle": "基于销毁与流动性构建",
+    "totalSupply": "总供应量：893.6亿 $OKOX",
+    "burned": "10.63% — 已销毁并永久移除。锁定在流动性中",
+    "lockedLiquidity": "87.37% — 锁定在流动性中。无团队代币。无猫腻。",
+    "communityWallet": "2% - 锁定给社区钱包",
+    "buyButton": "购买 $OKOX",
+    "bridgeButton": "跨链 $OKOX",
+    "contractAddress": "合约地址",
+    "bottomText": "就是这样。简单。透明。社区至上。"
+  },
+  "bridge": {
+    "title": "如何跨链",
+    "description": "3个简单步骤在链间转移 $OKOX",
+    "steps": {
+      "step1": "步骤1: 在手机上打开OKX钱包应用并点击DEX",
+      "step2": "步骤2: 在兑换菜单中选择\"从\"",
+      "step3": "步骤3: 从下拉菜单中选择您要交换的代币",
+      "step4": "步骤4: 现在选择\"到\"",
+      "step5": "步骤5: 在下拉菜单中，复制并粘贴$OKOX合约地址并选择代币",
+      "step6": "步骤6: 输入金额，点击交换，完成！",
+      "connectWallet": "连接钱包",
+      "selectTokens": "选择代币",
+      "confirm": "确认交易"
+    },
+    "comingSoon": "即将推出",
+    "downloadWallet": "下载OKX钱包",
+    "prevButton": "← 上一步",
+    "nextButton": "下一步 →"
+  },
+  "timeline": {
+    "title": "社区时间线",
+    "subtitle": "从愚人节到历史新高"
+  },
+  "footer": {
+    "rights": "保留所有权利。",
+    "terms": "服务条款",
+    "privacy": "隐私政策"
+  }
 }

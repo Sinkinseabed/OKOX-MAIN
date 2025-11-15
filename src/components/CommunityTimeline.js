@@ -69,7 +69,7 @@ const CommunityTimeline = () => {
 
 
     return (
-        <div className='community-timeline-section'>
+        <div className='community-timeline-section' id='timeline'>
             <div className='community-border'></div>
 
             <div className='community-timeline-content'>

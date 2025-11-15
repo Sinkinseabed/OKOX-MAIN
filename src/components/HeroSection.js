@@ -6,6 +6,7 @@ import copy from "@/../public/images/copy.png";
 import social_1 from "@/../public/images/social_1.png";
 import social_2 from "@/../public/images/social_2.png";
 import { useState } from "react";
+import { useTranslation } from 'react-i18next';
 import RotatingImageStrip from "./RotatingImageStrip";
 
 export default function HeroSection() {
@@ -22,6 +23,8 @@ export default function HeroSection() {
       });
   };
 
+  const { t } = useTranslation();
+  
   return (
     <div className="hero-section-container">
       <section className="hero">
@@ -29,8 +32,8 @@ export default function HeroSection() {
           {/* Left Content */}
           <div className="hero-left">
             <h1 className="section-title">
-              $OKOX — The OKX mascot<br />
-              <span>BACKED BY OKX ALPHA TRADERS.</span>
+              {t('hero.title')}<br />
+              <span>{t('hero.subtitle')}</span>
             </h1>
             <div className="mobile mobile-banner">
               <Image
@@ -40,7 +43,7 @@ export default function HeroSection() {
               priority
             />
             </div>
-            <p className="contract-label">CONTRACT ADDRESS:</p>
+            <p className="contract-label">{t('contractAddress')}:</p>
             <div className="contract-box">
               <div className="contract-box-text">
                 0x980855C4A8B601DF572E6877F908C8BED38BCB5
@@ -53,15 +56,15 @@ export default function HeroSection() {
             </div>
 
             <div className="hero-buttons desktop">
-              <a className="buy-btn" target="_blank" href="https://web3.okx.com/">BUY $OKOX</a>
+              <a className="buy-btn" target="_blank" href="https://web3.okx.com/">{t('header.buyButton')}</a>
               <a className="social-icon-btn " target="_blank" href="https://x.com/OKXOKOX"><Image src={social_2} alt="Social Icon 2" width={50} height={50} /></a>
               <a className="social-icon-btn social-icon-btn2" target="_blank" href="https://t.me/OKOXXLayer" ><Image src={social_1} alt="Social Icon 1" width={50} height={50} /></a>
             </div>
 
             <div className="token-stats">
-              <div className="stat-box">10.63% – BURNED AND GONE FOREVER</div>
-              <div className="stat-box stat-box2">2% – LOCKED FOR THE COMMUNITY WALLET</div>
-              <div className="stat-box stat-box3">87.37% – LOCKED IN LIQUIDITY</div>
+              <div className="stat-box">10.63% {t('hero.burned')}</div>
+              <div className="stat-box stat-box2">2% {t('hero.lockedForCommunity')}</div>
+              <div className="stat-box stat-box3">87.37% {t('hero.lockedInLiquidity')}</div>
             </div>
 
 
@@ -77,10 +80,10 @@ export default function HeroSection() {
             />
           </div>
           <div className="steps">
-            <div className="step-box">1. COPY THE CONTRACT ADDRESS</div>
-            <div className="step-box">2. ADD $OKOX TO YOUR OKX WALLET</div>
+            <div className="step-box">1. {t('hero.copy')}</div>
+            <div className="step-box">2. {t('hero.add')}</div>
             <div className="step-box">
-              3. BRIDGE & SWAP AND WELCOME TO THE OKOX FAMILY
+              3. {t('hero.bridge')}
             </div>
           </div>
         </div>

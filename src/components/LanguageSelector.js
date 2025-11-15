@@ -11,8 +11,8 @@ import i18n from '@/i18n/i18n';
 // import i18n from "@/src/i18n/i18n"; // correct import
 
 const languages = [
-  { code: 'en', name: 'English', flag: flag_en },
-  { code: 'zh', name: 'Chinese', flag: flag_ch },
+  { code: 'en', name: 'English', shortName: 'En', flag: flag_en },
+  { code: 'zh', name: 'Chinese', shortName: 'Ch', flag: flag_ch },
 ];
 
 export default function LanguageSelector() {
@@ -60,7 +60,7 @@ export default function LanguageSelector() {
       >
         <span className={styles.selectedLanguage}>
           {/* <span className={styles.flag}>{selectedLanguage.flag}</span> */}
-          <Image src={selectedLanguage.flag} alt="Flag" width={30} height={30} />
+          <Image src={selectedLanguage.flag} alt="Flag" width={40} height={30} />
           <span className={styles.code}>{selectedLanguage.code.toUpperCase()}</span>
         </span>
         <span className={styles.dropdownArrow}>▼</span>
@@ -97,12 +97,11 @@ export default function LanguageSelector() {
                 <Image 
                   src={language.flag} 
                   alt={language.name} 
-                  width={30} 
+                  width={40} 
                   height={30} 
                   className={styles.flag}
                 />
-                <span className={styles.name}>{language.name}</span>
-                <span className={styles.code}>{language.code.toUpperCase()}</span>
+                <span className={styles.name}>{language.shortName}</span>
               </div>
             ))}
           </motion.div>

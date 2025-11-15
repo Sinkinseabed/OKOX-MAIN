@@ -1,4 +1,79 @@
 {
-  "welcome": "Welcome w",
-  "desc": "This is my website."
+  "header": {
+    "home": "HOME",
+    "tokenomics": "TOKENOMICS",
+    "bridge": "BRIDGE",
+    "timeline": "TIMELINE",
+    "buyButton": "BUY $OKOX"
+  },
+  "hero": {
+    "title": "$OKOX — The OKX mascot",
+    "subtitle": "BACKED BY OKX ALPHA TRADERS",
+    "cta1": "Buy on OKX",
+    "cta2": "Read Whitepaper",
+    "burned": "BURNED AND GONE FOREVER",
+    "lockedForCommunity": "LOCKED FOR THE COMMUNITY WALLET",
+    "lockedInLiquidity": "LOCKED IN LIQUIDITY",
+    "copy": "COPY THE CONTRACT ADDRESS",
+    "add": "ADD $OKOX TO YOUR OKX WALLET",
+    "bridge": "BRIDGE & SWAP AND WELCOME TO THE OKOX FAMILY"
+  },
+  "contractAddress": "CONTRACT ADDRESS",
+  "whatIsOkox": {
+    "title": "WHAT IS $OKOX?",
+    "subtitle": "From Meme to Movement",
+    "description": "",
+    "points": [
+      "On April 1, 2023, the official OKX account introduced a mascot during april fools.",
+      "It was supposed to be a one-day laugh.",
+      "But the internet had other plans.",
+      "The community fell in love.",
+      "Memes were born. Mentions kept coming.",
+      "And now, that same mascot lives onchain as a token powered by its community."
+    ],
+    "bottomLine": "$OKOX isn't just a coin. It's a reminder that crypto culture builds itself — one meme at a time.",
+    "feature1": "Community Driven",
+    "feature2": "Secure & Scalable",
+    "feature3": "Deflationary Model"
+  },
+  "tokenomics": {
+    "title": "TOKENOMICS",
+    "subtitle": "Built on Burn & Liquidity",
+    "totalSupply": "Total Supply: 89.36 Billion $OKOX",
+    "burned": "10.63% — Burned and gone forever. Locked in liquidity",
+    "lockedLiquidity": "87.37% — Locked in liquidity. No team tokens. No funny business.",
+    "communityWallet": "2% - Locked for the community wallet",
+    "buyButton": "BUY $OKOX",
+    "bridgeButton": "BRIDGE $OKOX",
+    "contractAddress": "CONTRACT ADDRESS",
+    "bottomText": "That's it. Simple. Transparent. Community-first."
+  },
+  "bridge": {
+    "title": "How to Bridge",
+    "description": "Move $OKOX between chains in 3 easy steps",
+    "steps": {
+      "step1": "Step 1: Open OKX wallet app on your mobile & click dex",
+      "step2": "Step 2: From the swap menu click the \"from\"",
+      "step3": "Step 3: From the drop down select the token you want to swap from",
+      "step4": "Step 4: Now select the \"to\"",
+      "step5": "Step 5: In the drop down, copy and paste the $OKOX contract address and select the token",
+      "step6": "Step 6: enter the amount, click swap & voila!! It's done.",
+      "connectWallet": "Connect Wallet",
+      "selectTokens": "Select Tokens",
+      "confirm": "Confirm Transaction"
+    },
+    "comingSoon": "Coming Soon",
+    "downloadWallet": "Download The OKX Wallet",
+    "prevButton": "← Prev",
+    "nextButton": "Next →"
+  },
+  "timeline": {
+    "title": "Community Timeline",
+    "subtitle": "From April Fools to All-Time Highs"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy"
+  }
 }
