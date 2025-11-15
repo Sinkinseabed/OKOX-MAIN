@@ -1,49 +1,52 @@
 "use client";
 
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion } from "framer-motion";
 
 const CommunityTimelineNew = () => {
+    const { t } = useTranslation();
+    
     const mascotData = [
         {
             id: 1,
             img: "/images/timeline_1.jpg",
-            alt: "Tweet 1",
-            text: `On April 1, 2023, the official OKX account announced the mascot:”Every great brand needs a mascot. OKX is excited to introduce ours"OKOX."`,
+            alt: t('timeline.tweet1.alt'),
+            text: t('timeline.tweet1.text'),
         },
         {
             id: 2,
             img: "/images/timeline_2.jpg",
-            alt: "Tweet 2",
-            text: `few days later, on April 4th, the official OKX replied to a now-deleted comment using its mascot, OK OX. `,
+            alt: t('timeline.tweet2.alt'),
+            text: t('timeline.tweet2.text'),
             link: "https://x.com/okx/status/1654547798258331651",
         },
         {
             id: 3,
             img: "/images/timeline_3.jpg",
-            alt: "Tweet 3",
-            text: `On April 15, 2024, an anonymous developer decides to launch one of the first coins on Xlayer, OKOX.`,
+            alt: t('timeline.tweet3.alt'),
+            text: t('timeline.tweet3.text'),
             link: "https://x.com/OKXOKOX/status/1645853887910539264",
         },
         {
             id: 4,
             img: "/images/timeline_4.jpg",
-            alt: "Tweet 4",
-            text: `On May 5, 2023, the OKX account once again teased the OKOX mascot along with Pepe. "Don't let your memes be dreams"`,
+            alt: t('timeline.tweet4.alt'),
+            text: t('timeline.tweet4.text'),
             link: "https://x.com/okx/status/1654547798258331651",
         },
         {
             id: 5,
             img: "/images/timeline_5.jpg",
-            alt: "Tweet 5",
-            text: `The team has since received multiple interactions from OKX official accounts in the meantime.`,
+            alt: t('timeline.tweet5.alt'),
+            text: t('timeline.tweet5.text'),
             link: "https://x.com/OKXOKOX/status/1964200745013579895",
         },
         {
             id: 6,
             img: "/images/timeline_6.jpg",
-            alt: "Tweet 6",
-            text: `On September 26, 2025, the developer handed over his 2% supply to the community. `,
+            alt: t('timeline.tweet6.alt'),
+            text: t('timeline.tweet6.text'),
             link: "https://x.com/okxokox/status/1970727100928946521?s=46",
         },
     ];
@@ -74,7 +77,7 @@ const CommunityTimelineNew = () => {
 
             <div className='community-timeline-content'>
                 <div className='community-header'>
-                    <h1 className="section-title">COMMUNITY TIMELINE<br /><span>From April Fools to All-Time Highs</span></h1>
+                    <h1 className="section-title">{t('timeline.title')}<br /><span>{t('timeline.subtitle')}</span></h1>
                     {/* <p>$OKOX started as a joke.<br /> Now it's building a story — powered by community, memes, and milestones.<br />
                         Every step adds to the legend. Every holder becomes part of history.</p> */}
                 </div>
@@ -136,8 +139,7 @@ const CommunityTimelineNew = () => {
                     </div> */}
                 </div>
                 <div className='timeline-info-wrapper'>
-                    <p className='timeline-info'>$OKOX started as a joke.<br /> Now it's building a story — powered by community, memes, and milestones.<br />
-                        Every step adds to the legend. Every holder becomes part of history.</p>
+                    <p className='timeline-info'>{t('timeline.description')}</p>
                 </div>
             </div>
         </div>
