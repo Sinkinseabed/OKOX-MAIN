@@ -106,7 +106,6 @@ const CommunityTimelineNew = () => {
                         ))}
 
                         {mascotData.map(({ id, img, alt, text, link }) => (
-                            <>
                                 <div
                                     key={id}
                                     className="slider-step desktop"
@@ -128,7 +127,6 @@ const CommunityTimelineNew = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </>
                         ))
                         }
                     </section>
